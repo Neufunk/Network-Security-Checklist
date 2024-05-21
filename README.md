@@ -173,3 +173,49 @@ Safeguard your digital fortress: utilize firewalls, IDS/IPS, and secure VPNs. En
 54.	Provide secure storage for Confidential (category-I) Data as required. Security can be provided by means such as, but not limited to, encryption, access controls, file system audits, physically securing the storage media, or any combination thereof as deemed appropriate.	
 55.	Install software to check the integrity of critical operating system files.	
 56.	If RDP is utilized, set RDP connection encryption level to high.	
+
+-------------------------------------------------------------
+
+# LAN
+Validation schéma réseau-redondance
+Vérification des dates-time des devices (serveur NTP en place)
+Centralisation et conservation des logs
+Vérification des mots de passes des devices (mot de passe par défaut)
+Vérification accès SNMP avec communauté par défaut (Public-private)
+Ségrégation des réseaux
+WIFI
+Réseau Guest
+ 
+# Serveurs - machines
+Vérification des domain admin
+Vérification antivirus
+        Présence sur toutes les machines
+        Tampering protection
+        Eicar
+        Licence
+Vérification si machines à jours
+Vérification du process de mise à jour
+Configuration des droits sur les shares (Par groupe et non par utilisateurs)
+Applocker
+GPO en place
+LAPS
+Admin locaux
+Backups (copie distante- configuration - virtual standby)
+Virtualisation (vérification des redondances, config sécurtié, reboot auto, ssh coupé)
+Exchange: (Quarantaine, certificat, séparation des disques )
+ 
+ 
+# WAN
+Ports ouverts
+Services exposés
+Web filtering
+Filtrage des ports en sortie
+Licences FW
+Antivirus
+Connexions VPN (MFA, certificat, limite connexion concurrentes, etc)
+ 
+# Mail
+Vérification antispam
+SPF
+DKIM - Signature mail sortants
+DMARC - Que faire si DKIM et SPF ne sont pas valide
