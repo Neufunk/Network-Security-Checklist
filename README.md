@@ -177,45 +177,45 @@ Safeguard your digital fortress: utilize firewalls, IDS/IPS, and secure VPNs. En
 -------------------------------------------------------------
 
 # LAN
-Validation schéma réseau-redondance
-Vérification des dates-time des devices (serveur NTP en place)
-Centralisation et conservation des logs
-Vérification des mots de passes des devices (mot de passe par défaut)
-Vérification accès SNMP avec communauté par défaut (Public-private)
-Ségrégation des réseaux
-WIFI
-Réseau Guest
+1. Validation schéma réseau-redondance
+2. Vérification des dates-time des devices (serveur NTP en place)
+3. Centralisation et conservation des logs
+4. Vérification des mots de passes des devices (mot de passe par défaut)
+5. Vérification accès SNMP avec communauté par défaut (Public-private)
+6. Ségrégation des réseaux
+7. WIFI
+8. Réseau Guest
  
 # Serveurs - machines
-Vérification des domain admin
-Vérification antivirus
-        Présence sur toutes les machines
-        Tampering protection
-        Eicar
-        Licence
-Vérification si machines à jours
-Vérification du process de mise à jour
-Configuration des droits sur les shares (Par groupe et non par utilisateurs)
-Applocker
-GPO en place
-LAPS
-Admin locaux
-Backups (copie distante- configuration - virtual standby)
-Virtualisation (vérification des redondances, config sécurtié, reboot auto, ssh coupé)
-Exchange: (Quarantaine, certificat, séparation des disques )
+1. Vérification des domain admin
+2. Vérification antivirus
+        2.1 Présence sur toutes les machines
+        2.2 Tampering protection
+        2.3 Eicar
+        2.4 Licence
+3. Vérification si machines à jours
+4. Vérification du process de mise à jour
+5. Configuration des droits sur les shares (Par groupe et non par utilisateurs)
+6. Applocker
+7. GPO en place
+8. LAPS
+9. Admin locaux
+10. Backups (copie distante- configuration - virtual standby)
+11. Virtualisation (vérification des redondances, config sécurtié, reboot auto, ssh coupé)
+12. Exchange: (Quarantaine, certificat, séparation des disques )
  
  
 # WAN
-Ports ouverts
-Services exposés
-Web filtering
-Filtrage des ports en sortie
-Licences FW
-Antivirus
-Connexions VPN (MFA, certificat, limite connexion concurrentes, etc)
+1. Ports ouverts
+2. Services exposés
+3. Web filtering
+4. Filtrage des ports en sortie
+5. Licences FW
+6. Antivirus
+7. Connexions VPN (MFA, certificat, limite connexion concurrentes, etc)
  
 # Mail
-Vérification antispam
-SPF
-DKIM - Signature mail sortants
-DMARC - Que faire si DKIM et SPF ne sont pas valide
+1. Vérification antispam
+2. SPF
+3. DKIM - Signature mail sortants
+4. DMARC - Que faire si DKIM et SPF ne sont pas valide
